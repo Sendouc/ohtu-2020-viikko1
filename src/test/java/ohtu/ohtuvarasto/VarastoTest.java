@@ -110,6 +110,6 @@ public class VarastoTest {
     public void negatiivisestiEiVoiOttaa() {
         varasto.lisaaVarastoon(5);
         varasto.otaVarastosta(-1);
-        assertEquals(4, varasto.getSaldo(), vertailuTarkkuus);
+        assertEquals(5, varasto.getSaldo(), vertailuTarkkuus);
     }
 }
