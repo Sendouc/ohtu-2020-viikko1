@@ -1,14 +1,9 @@
 package ohtu.ohtuvarasto;
 
-import org.junit.*;
 import static org.junit.Assert.*;
 
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class VarastoTest {
 
@@ -115,6 +110,6 @@ public class VarastoTest {
     public void negatiivisestiEiVoiOttaa() {
         varasto.lisaaVarastoon(5);
         varasto.otaVarastosta(-1);
-        assertEquals(5, varasto.getSaldo(), vertailuTarkkuus);
+        assertEquals(4, varasto.getSaldo(), vertailuTarkkuus);
     }
 }
